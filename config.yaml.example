@@ -1,0 +1,13 @@
+# PPAI Configuration – copy to config.yaml and edit
+llm:
+  provider: "grok"
+  api_key: "xai-your-actual-api-key-here"
+  model: "grok-beta"          # or whatever model you use
+
+ui:
+  host: "127.0.0.1"
+  port: 8080
+  title: "PPAI – Personal Private AI"
+
+wisdom_keeper:
+  data_dir: "\~/storage/shared/PPAI_Data"   # your personal Markdown/notes folder

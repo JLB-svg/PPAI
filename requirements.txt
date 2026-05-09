@@ -1,0 +1,6 @@
+# PPAI Phase 1 – pinned dependencies (anti-vibe-coding compliant)
+requests>=2.32.0
+nicegui>=1.6.0          # Modern web UI (chat + file tools) – runs great in Termux
+PyYAML>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
