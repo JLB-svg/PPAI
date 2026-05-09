@@ -18,4 +18,3 @@ After every Grok API response, the bootstrap automatically calls:
 
 ```bash
 python -m src.ppai.utils.grok_apply --log
-eof
