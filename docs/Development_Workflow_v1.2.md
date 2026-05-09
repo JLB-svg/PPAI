@@ -1,0 +1,59 @@
+# PPAI Development Workflow v1.2
+
+## 1. Purpose and Vision
+This document establishes the official, professional, ultra-safe development workflow for the entire PPAI project.  
+
+It transforms the original "vibe coding" idea into a polished, repeatable, auditable, and fully sovereign process. The goal is to enable the Project Owner (a non-programmer) to direct the complete development of a sovereign, on-device Intelligence Amplifier and Wisdom Keeper by collaborating with Grok (via the xAI API) through a simple terminal-based interface.
+
+This workflow itself is version-controlled and documented. It is designed to work with any future local LLM and becomes the "constitution" for all PPAI development from this point forward.
+
+**Last updated:** May 9, 2026
+
+## 2. Guiding Principles
+This workflow is built directly on the core principles defined in:
+- ARCHITECTURE_v1.0.md (modularity, one-file-per-responsibility, documentation-first, anti-vibe-coding)
+- BRAIN_ENVIRONMENT_ARCHITECTURE_v2.0.md (portable brain directory, atomic backups, reproducible state, sovereignty, safety)
+
+Key rules that must never be violated:
+- Human remains the sole Director and final authority on every change.
+- AI acts strictly as Architect and Executor.
+- Backups on every meaningful change.
+- Atomic, auditable, and reproducible state (git + brain directory).
+- Safety, sovereignty, and zero-trust over speed or convenience.
+- No chaos, no un-reviewed changes, no complexity creep.
+
+## 3. Roles
+- **Project Owner (Human)**: You — the prompter, reviewer, and final approver. You control the terminal and the apply script.
+- **Grok (AI)**: Skilled executor — provides analysis, designs, full code, and exact shell commands. Never acts without explicit approval.
+
+## 4. Core Collaboration Loop
+1. **Discussion Phase** — Normal conversation in the terminal chat with Grok. Analysis, proposals, and explanations happen in plain English.
+2. **Proposal Phase** — Grok clearly states the intended change and why it is needed.
+3. **Execution Phase** — When ready to apply a change, Grok outputs **nothing but a single bash code block** containing the exact command(s).
+4. **Apply Phase** — You run the **apply script** (to be built later). This script will intentionally avoid using any form of copy and paste. The choice to use a terminal to communicate is an explicit decision made with the intention to use direct piping as a means to avoid clipboard related errors. The script:
+   - Displays the full proposed command
+   - Displays Grok’s preceding explanation/summary
+   - Requires explicit confirmation (`y` or `apply`)
+   - Performs a git commit (with clear message) before execution when applicable
+   - Executes the command safely
+   - Captures and logs the output
+5. **Verification Phase** — Grok confirms the result in the next chat message and we continue.
+
+## 5. Strict Command Output Rules for Grok
+Grok must follow these rules without exception:
+
+- During normal discussion: **never** output raw shell commands or executable code blocks.
+- When executing a change: The **entire response** must consist of **exactly one** markdown code block (```bash ... ```).  
+  No explanatory text before the block.  
+  No explanatory text after the block.  
+  No additional comments outside the block.
+- Before proposing any executable code or command, Grok **must verify** that the proposed code, languages, libraries, dependencies, and environment exactly match what is currently installed and configured in the development environment. If there is any mismatch, Grok must explicitly notify the user, clearly describe what needs to be installed or changed, and request explicit user instructions before proceeding.
+
+Correct example:
+```bash
+# Purpose: Create a new empty utility script with proper shebang
+cat > src/ppai/utils/example.sh << 'EOF'
+#!/usr/bin/env bash
+# PPAI utility placeholder
+echo "This is a placeholder for future utilities"
+EOF
