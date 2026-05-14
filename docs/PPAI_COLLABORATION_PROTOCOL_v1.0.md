@@ -1,6 +1,6 @@
 # PPAI Collaboration Protocol (Token-Efficient & Anti-Vibe-Coding)
 
-**Document:** `PPAI_Collaboration_Protocol.md`  
+**Document:** `PPAI_COLLABORATION_PROTOCOL_v1.0.md`  
 **Version:** 1.0  
 **Date:** May 13, 2026  
 **Status:** Active  
