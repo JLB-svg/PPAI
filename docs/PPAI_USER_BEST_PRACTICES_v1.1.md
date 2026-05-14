@@ -1,13 +1,12 @@
-```markdown
-# PPAI Grok Collaboration Best Practices
+# PPAI User Best Practices
 
-**Document:** `PPAI_Grok_Collaboration_Best_Practices.md`  
-**Version:** 1.0  
+**Document:** `PPAI_USER_BEST_PRACTICES_v1.1.md`  
+**Version:** 1.1 (Documentation Compliance Edition)  
 **Date:** May 13, 2026  
-**Status:** Active – Reference Document for All Sessions  
+**Status:** Active – Daily Workflow Reference  
 **Author:** Grok (xAI) on behalf of PPAI Core  
-**References:** `PPAI_Collaboration_Protocol.md` v1.0, `PPAI_Code_Style_Guide.md` v1.0, `BRAIN_ENVIRONMENT_ARCHITECTURE_v2.1.md`  
-**Purpose:** Capture the exact high-performance collaboration practices used by professional engineers across Elon’s companies (xAI, Tesla, SpaceX, Neuralink, The Boring Company). Adapted specifically for working with Grok as primary coder on the sovereign PPAI-Brain project.
+**References:** `PPAI_Collaboration_Protocol.md` v1.0, `PPAI_Code_Style_Guide.md` v1.4, `PPAI_SYSTEM_ARCHITECTURE_v2.1.md` (Brian’s Philosophy + xAI Best Practices), `BRAIN_ENVIRONMENT_ARCHITECTURE_v2.1.md`  
+**Purpose:** Provide concise, actionable daily practices for Jean-Luc when working with the PPAI Wisdom Keeper and Grok. This document is the canonical user-side companion to the Collaboration Protocol.
 
 ---
 
@@ -15,16 +14,16 @@
 
 - **First-Principles Thinking**: Every request starts from the fundamental goal, never from assumption or “what feels right.” Ask “what problem are we actually solving?” before any directive.
 - **Extreme Ownership**: You own the vision and final decision. Grok owns flawless execution within the spec. No diffusion of responsibility.
-- **Anti-Vibe-Coding / Delete Code**: If it is not explicitly required by a spec, it does not exist. “The best code is the code that is never written.”
+- **Anti-Vibe-Coding / Delete Before You Add**: If it is not explicitly required by a spec, it does not exist. “The best code is the code that is never written.”
 - **High Velocity, Low Noise**: Speed is measured in working, auditable artifacts delivered per session, not in conversation length.
-- **Traceability Above All**: Every line of code, every document change, every decision must link back to a named spec section.
+- **Traceability Above All**: Every line of code, every document change, every decision must link back to a named spec section (per Code Style Guide §1).
 
 ---
 
 ## 2. Communication Principles (xAI/Tesla Style)
 
 - **Anchor First**: Begin every session or major task with one line: `Anchor: [exact document names and versions]`. Never re-paste full specs.
-- **Targeted & Minimal**: Send only the diff, the specific section, or a one-sentence directive. Use the exact format from `PPAI_Collaboration_Protocol.md` rule 2.
+- **Targeted & Minimal**: Send only the diff, the specific section, or a one-sentence directive. Use the exact format from `PPAI_Collaboration_Protocol.md`.
 - **Artifact-Only Responses**: Expect and enforce that Grok returns only the requested deliverable (markdown block, code file, diff) unless you explicitly ask for explanation.
 - **No Fluff Rule**: Any response longer than necessary is a failure. Use “Checkpoint: summarize current state in <100 tokens” when context needs resetting.
 
@@ -93,4 +92,3 @@ Study it once. Refer back via anchor in every session. It is deliberately short,
 Add this file to `PPAI-Brain/docs/`. All future collaboration will follow it by default.
 
 — Grok (xAI) on behalf of the collaboration team
-```
