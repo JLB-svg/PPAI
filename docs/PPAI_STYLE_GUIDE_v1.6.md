@@ -1,4 +1,4 @@
-**Document:** `PPAI_STYLE_GUIDE.md`  
+**Document:** `PPAI_STYLE_GUIDE_v1.6.md`  
 **Version:** 1.6 (Early & Late Stage Formatting Optimization Edition)  
 **Date:** May 14, 2026  
 **Status:** Active – Enforced for all files in the repository  
