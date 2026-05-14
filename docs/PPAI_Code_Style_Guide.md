@@ -1,1 +1,0 @@
-[full updated style guide content here]
